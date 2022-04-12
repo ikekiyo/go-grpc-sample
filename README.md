@@ -2,6 +2,18 @@
 golang × gRPC のサンプル
 
 ## 開発
+### version管理
+asdfで管理
+```
+# plugin install
+asdf plugin-add golang
+
+# python install
+asdf install golang 1.18.0
+
+# local setup
+asdf local golang 1.18.0
+```
 
 ### 起動
 ```bash
