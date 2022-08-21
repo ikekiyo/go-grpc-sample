@@ -17,6 +17,7 @@ asdf local golang 1.18.0
 
 ### 起動
 ```bash
+cd api
 go run api/server/server.go
 ```
 
