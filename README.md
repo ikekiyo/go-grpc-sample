@@ -19,9 +19,17 @@ asdf local golang 1.18.0
 ```bash
 go run api/server/server.go
 ```
+
+### インストール
+[evans](https://github.com/ktr0731/evans)
+```bash
+brew tap ktr0731/evans
+brew install evans
+```
+
 ### リクエストサンプル
 ```bash
-grpc_cli call localhost:50051 pancake.maker.PancakeBakerService.Bake 'menu: 2'
+echo '{ "menu": 1}' | evans -r -p 50051 cli call pancake.maker.PancakeBakerService.Report
 ```
 
 ### protocol buffersの生成
